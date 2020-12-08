@@ -50,7 +50,7 @@ class App extends React.Component {
     // Basically the conditional below is saying if there is a city and country inputted show the data below if not show nothing
 
     if (city  && country ) {
-      console.log(data);
+      // console.log(data);
 
       // Below I have set the state by mapping through the api to select specific pieces of data to be rendered on the application.
 
