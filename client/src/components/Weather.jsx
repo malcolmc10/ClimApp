@@ -21,7 +21,7 @@ class Weather extends React.Component {
                 
                 {this.props.feels_like && <p>Feels Like:&nbsp;{ this.props.feels_like }</p>} 
                 
-                
+                {this.props.error && <p>{this.props.error}</p>}
                 
 
 
