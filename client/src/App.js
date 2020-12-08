@@ -49,7 +49,7 @@ class App extends React.Component {
 
     // Basically the conditional below is saying if there is a city and country inputted show the data below if not show nothing
 
-    if (city  && country ) {
+    if (city && country) {
       // console.log(data);
 
       // Below I have set the state by mapping through the api to select specific pieces of data to be rendered on the application.
@@ -92,31 +92,42 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <div className="wrapper">
+          <div className="main">
+            <div className="container">
+              <div className="row">
+                <div className="col-xs-5 title-container">
 
-        <Title />
-        <Form getWeather={this.getWeather} />
+                  <Title />
+                  </div>
+                  <div className="col-xs-7 form-container">
+                  <Form getWeather={this.getWeather} />
 
-        {/* below we are passing the state into the Weather component to allow us to use the data in the component */}
-        <Weather
-          temperature={this.state.temperature}
-          icon={this.state.icon}
-          description={this.state.description}
-          humidity={this.state.humidity}
-          temp_min={this.state.temp_min}
-          temp_max={this.state.temp_max}
-          feels_like={this.state.feels_like}
-          city={this.state.city}
-          country={this.state.country}
-          error={this.state.error}
+                  {/* below we are passing the state into the Weather component to allow us to use the data in the component */}
+                  <Weather
+                    temperature={this.state.temperature}
+                    icon={this.state.icon}
+                    description={this.state.description}
+                    humidity={this.state.humidity}
+                    temp_min={this.state.temp_min}
+                    temp_max={this.state.temp_max}
+                    feels_like={this.state.feels_like}
+                    city={this.state.city}
+                    country={this.state.country}
+                    error={this.state.error}
+
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
 
+        </div>
 
 
-
-
-        />
 
       </div>
     );
