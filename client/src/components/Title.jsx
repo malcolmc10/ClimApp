@@ -1,4 +1,7 @@
 import React from 'react';
+import github from '../img/github.svg'
+import linkedin from '../img/linkedin.svg'
+import twitter from '../img/twitter.svg'
 
 class Title extends React.Component {
     render() {
@@ -9,7 +12,9 @@ class Title extends React.Component {
 
                 {/* Add lets connect and links to github, Linkedin, and Twitter */}
                 <div>
-                    {/* <p>Links</p> */}
+                <a href ="https://github.com/malcolmc10/ClimApp" target="_blank"><img src={github} className="github"  /></a>
+                <a href ="https://www.linkedin.com/in/colinpmalcolm/" target="_blank"><img src={linkedin} className="linkedin"  /></a>
+                <a href ="https://twitter.com/Themalcolmmind" target="_blank"><img src={twitter} className="github"  /></a>
                 </div>
             </div>
         )

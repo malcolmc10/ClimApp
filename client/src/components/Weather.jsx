@@ -37,17 +37,15 @@ class Weather extends React.Component {
                 
                 <span className="weather__value">{this.props.city && this.props.country &&  <p>{ this.props.city }, { this.props.country }</p>}</span>
                 
-                <span className="weather__value">{this.props.temperature && <p>Temperature:&nbsp;{ this.props.temperature }</p>}</span>
+                <span className="weather__value">{this.props.temperature && <p>Temperature:&nbsp;{ this.props.temperature }°F</p>}</span>
 
-                <span className="weather__value">{this.props.temp_max && this.props.temp_min && <p>High:&nbsp;{ this.props.temp_max }&nbsp;Low:&nbsp;{ this.props.temp_min }</p>}</span>
-                
-                <span className="weather__value">{this.props.temp_min && <p>L:&nbsp;{ this.props.temp_min }</p>}</span>
+                <span className="weather__value">{this.props.temp_max && this.props.temp_min && <p>High:&nbsp;{ this.props.temp_max }°F&nbsp;Low:&nbsp;{ this.props.temp_min }°F</p>}</span>
                 
                 <span className="weather__value">{this.props.description && <p>Conditions:&nbsp;{ this.props.description }</p>}</span>
                 
-                <span className="weather__value">{this.props.humidity && <p>Humidity:&nbsp;{ this.props.humidity }</p>}</span>
+                <span className="weather__value">{this.props.humidity && <p>Humidity:&nbsp;{ this.props.humidity }%</p>}</span>
                 
-                <span className="weather__value">{this.props.feels_like && <p>Feels Like:&nbsp;{ this.props.feels_like }</p>}</span> 
+                <span className="weather__value">{this.props.feels_like && <p>Feels Like:&nbsp;{ this.props.feels_like }°F</p>}</span> 
                 
                 <span className="weather__error">{this.props.error && <p>{this.props.error}</p>}</span>
                 

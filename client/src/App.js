@@ -1,8 +1,9 @@
 import React from 'react';
 import "./App.css";
-import Title from './components/Title'
-import Form from './components/Form'
-import Weather from './components/Weather'
+import Title from './components/Title';
+import Form from './components/Form';
+import Weather from './components/Weather';
+import Footer from './components/Footer';
 
 
 // This is the API Key
@@ -127,7 +128,7 @@ class App extends React.Component {
 
         </div>
 
-
+        <Footer/>
 
       </div>
     );

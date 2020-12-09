@@ -128,3 +128,29 @@ button:active {
   letter-spacing: 1px;
   font-weight: 200;
 }
+
+.Footer {
+    background: linear-gradient(to right, #16A085, #B5FFFC);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.github {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.twitter {
+  height: 30px;
+  width: 30px;
+  
+}
+
+.linkedin {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
